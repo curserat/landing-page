@@ -17,14 +17,15 @@ body {
 .block0 .container,
 .block1 .container {
     width: 1280px;
-    display:flex;
-    padding: 8px 32px;
     margin:auto;
+}
+
+.block0 .container{
+    padding: 8px 32px;
 }
 
 .block0 .header{
     display:flex;
-    flex:auto;
     justify-content: space-between;
     align-items:center;
 }
@@ -74,21 +75,20 @@ button {
 .block1 .container{
     display:flex;
     justify-content:space-between;
+    justify-content:center;
     padding: 100px 32px;
 }
 
 .block1 .content {
-    width:600px;
     display:flex;
     flex-direction:column;
     gap:10px;
+    margin-right:80px;
 }
 
 .block1 .maintext {
     font-size: 48px;
     font-weight: 800;
-    display:flex;
-    flex:initial;
 }
 
 .block1 .subtext,
@@ -98,8 +98,8 @@ a {
 }
 
 .block1 .placeholder {
-    height: 300px;
-    width: 600px;
+    height:250px;
+    width: 550px;
     background-color: grey;
     display: flex;
     flex:none;
@@ -107,7 +107,7 @@ a {
     align-items: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
     .block1 .placeholder {
         display: none;
     }
