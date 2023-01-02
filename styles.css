@@ -1,11 +1,14 @@
 body {
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
     background-color: #1F2937;
 }
 
 .wrapper {
-    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
-    overflow: hidden;
+    max-height:100vh;
+    overflow-x:hidden;
+    display:flex;
+    flex-direction:column;  
 }
 
 .block0,
@@ -30,11 +33,13 @@ body {
 
 .block1 .container,
 .block2 .container,
+.block3 .container,
 .block4 .container,
 .footer .container {
     width: 1920px;
     display: flex;
     justify-content: center;
+    align-items:center;
     flex: initial;
     margin: 0 auto;
 }
@@ -79,7 +84,7 @@ body {
 
 ul {
     display: flex;
-    list-style-type: none;
+    list-style-type:none;
     padding: 0;
     margin: 0;
     gap: 16px;
@@ -101,6 +106,9 @@ button {
     padding: 6px;
 }
 
+.block1{
+    height:100vh;
+}
 .block1 .container {
     padding: 100px 32px;
 }
@@ -232,6 +240,7 @@ a {
     align-items: center;
     flex: auto;
     flex-wrap: wrap;
+    gap:20px;
     padding: 50px 100px;
     border-radius: 8px;
     max-width: 850px;
